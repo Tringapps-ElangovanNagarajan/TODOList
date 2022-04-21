@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO_DO_LIST</title>
+        <Style>
+        body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#submit{
+    position: relative;
+    left: 100px;
+}
+.signin{
+                border: 2px solid;
+                margin: auto;
+                width:30%;
+            }
+.createList{
+    padding: 20px;
+}
+.options{
+    padding: 20px;
+}
+.completed{
+    background-color: #faebd7;
+    text-decoration: line-through;
+}
+label{
+    display:inline-block;
+    width:40%;
+}
+    </Style>    <Style>
+        body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#submit{
+    position: relative;
+    left: 100px;
+}
+.todolist{
+                border: 2px solid;
+                margin: auto;
+                width:40%;
+            }
+.createList{
+    padding: 20px;
+}
+.options{
+    padding: 20px;
+}
+.completed{
+    background-color: #faebd7;
+    text-decoration: line-through;
+}
+label{
+    display:inline-block;
+    width:40%;
+}
+    </Style>
+    <script src="TASK2-JAVASCRIPT.js" defer></script>
+</head>
+<body style="text-align: center;height: 100%;">
+    <h1>To Do List</h1>
+    <div class="todolist">
+    <div class="createList">
+        <input type="text" id="newList">
+        <button id="addList" onclick="addList()">Add</button>
+    </div>
+    <div class="showList">
+        <ol id="myList">
+
+        </ol>
+    </div>
+    <div class="options">
+        <button onclick="clearComplete()">Clear Complete</button>
+        <button onclick="empty()">Empty List</button>
+        <button onclick="save()">Save List</button>
+        <button onclick="showSavedList()">Show Saved List</button>
+    </div>
+    <a href="TASK2-SIGN_IN.html"> Sign In</a>
+    </div>
+</body>
+</html>
